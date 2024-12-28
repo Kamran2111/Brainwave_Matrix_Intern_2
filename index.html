@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="m-[20px_30px_0px_30px]">
+        <div class="flex items-center justify-between">
+          <h4 class="text-xl text-dark">Avion</h4>
+          <div class="relative">
+            <button id="openModal" class="open-btn">
+              <img class="basket-icon relative cursor-pointer" src="/basket.png" alt="cart" />
+            </button>
+          </div>
+          </div>
+        </div>
+      </header>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2 class="text-xl font-semibold mb-4">Cart</h2>
+          <ul id="cart" class="mb-4"></ul>
+          <p id="total" class="text-lg font-bold">Result: 0.00 $</p>
+          <button id="closeModalBtn" class="close-btn">Close</button>
+        </div>
+      </div>
+      <main>
+        <section class="section xl:mb-[60px] xl:mt-[60px] lg:mt-[40px] lg:mb-[40px] sm:mb-[48px] flex items-center">
+          <div class="bg-dark">
+            <div class="xl:m-[60px_187px_196px_60px] lg:m-[0px_40px_80px_40px] sm:p-[40px_24px]">
+              <h2
+                class="text-[32px]   text-white font-normal"
+              >
+                Premium quality product
+              </h2>
+              <button
+                class="btn text-10px font-normal text-white p-[16px_32px] bg-btnCol"
+              >
+
+                View collection
+              </button>
+            </div>
+            <p class="xl:m-[0px_96px_60px_60px] lg:m-[0px_60px_60px_60px] xl:text-[18px] sm:m-[80px_24px_80px_24px]  text-white">
+              Discover our collection of premium products, crafted with
+              attention to detail and quality in mind. Perfect for those who
+              value style and durability.
+            </p>
+          </div>
+          <div>
+            <img
+              class="max-w-[520px] max-h-[515px] hidden xl:block"
+              src="https://static.zara.net/assets/public/6767/cf73/06df4dc78f7b/9393d4cdf13c/13544420800-a2/13544420800-a2.jpg?ts=1732280573561&"
+              alt="man"
+            />
+          </div>
+        </section>
+        <section class="section flex flex-wrap items-center justify-center">
+          <h3 class="text-[24px] font-normal text-center sm:m-[0px_20px] text-[#626265]">
+            What makes ur brand different
+          </h3>
+          <ul
+            class="grid xl:grid-cols-4  lg:grid-cols-2 sm:m-[36px_24px_45px_24px] lg:gap-10 mb-[80px] mt-[51px]"
+          >
+            <li>
+              <img src="/Delivery.png" alt="Delivery" />
+              <h4 class="text-[20px] font-normal text-dark mb-[16px] mt-[8px]">
+                Next day as standard
+              </h4>
+              <p class="text-[16px] font-normal text-dark">
+                Order before 3pm and get your order the next day as standard
+              </p>
+            </li>
+            <li>
+              <img src="/Checkmark.png" alt="Checkmark" />
+              <h4 class="text-[20px] font-normal text-dark mb-[16px] mt-[8px]">
+                Made by true artisans
+              </h4>
+              <p class="text-[16px] font-normal text-dark">
+                Handmade crafted goods made with real passion and craftmanship
+              </p>
+            </li>
+            <li>
+              <img src="/Purchase.png" alt="Purchase" />
+              <h4 class="text-[20px] font-normal text-dark mb-[16px] mt-[8px]">
+                Unbeatable prices
+              </h4>
+              <p class="text-[16px] font-normal text-dark">
+                For our materials and quality you won’t find better prices
+                anywhere
+              </p>
+            </li>
+            <li>
+              <img src="/Sprout.png" alt="Sprout" />
+              <h4 class="text-[20px] font-normal text-dark mb-[16px] mt-[8px]">
+                Recycled packaging
+              </h4>
+              <p class="text-[16px] font-normal text-dark">
+                We use 100% recycled packaging to ensure our footprint is
+                manageable
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section id="view" class="section">
+          <div>
+            <h3 class="text-[32px] font-normal text-dark mb-[33px] mt-[80px]">
+              New products
+            </h3>
+            <ul class="new-products sm:m-[36px_24px_45px_24px] grid xl:grid-cols-3 mb-[147px] gap-5"></ul>
+          </div>
+        </section>
+        <section>
+          <div class="marquee">
+            <div class="marquee-content">
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+            </div>
+            <div class="marquee-content">
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+              <span>WOW Бесплатная доставка заказов от 100 долларов!</span>
+            </div>
+          </div>
+        </section>
+        <section  class="section">
+          <h2 class="text-[32px] font-normal mt-[64px] mb-[25px] text-dark">
+            Our popular products
+          </h2>
+          <ul class="pop-products sm:m-[36px_24px_45px_24px] grid xl:grid-cols-3 gap-10"></ul>
+        </section>
+         
+      </main>
+      <footer class="bg-black text-white py-8">
+        <div class="container mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4">
+          
+          <div class="text-center md:text-left">
+            <h4 class="text-lg font-semibold mb-4">О нас</h4>
+            <p class="text-sm">
+              Мы предоставляем лучшие товары для мужчин, включая футболки, джинсы и сумки.
+            </p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-lg font-semibold mb-4">Контакты</h4>
+            <ul class="text-sm space-y-2">
+              <li>Телефон: +123 456 789</li>
+              <li>Email: shop@example.com</li>
+              <li>Адрес: ул. Технологий, 1</li>
+            </ul>
+          </div>
+          <div class="text-center md:text-right">
+            <h4 class="text-lg font-semibold mb-4">Следите за нами</h4>
+            <div class="flex justify-center md:justify-end space-x-4">
+              <a href="#" class="hover:text-gray-400">Facebook</a>
+              <a href="#" class="hover:text-gray-400">Instagram</a>
+              <a href="#" class="hover:text-gray-400">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-gray-700 pt-4">
+          © 2024 Магазин. Все права защищены.
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
